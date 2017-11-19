@@ -1,0 +1,110 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+	margin: 5px;
+}
+
+@font-face {
+	font-family: 'MrRobot';
+	src: url('mr_robot.woff') format('woff');
+}
+button>a{
+	font-size: 20px;
+	color: red;
+}
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+
+h1 {
+	font-family: 'MrRobot';
+	color: red;
+	font-weight: normal;
+	font-size: 60px;
+	animation: titleAnimation 2s ease-in;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+h2 {
+	color: red;
+	font-size: 30px;
+	font-family: 'Vollkorn SC';
+}
+@keyframes titleAnimation {
+	0% {
+		font-size: 1px;
+	}
+	100% {
+		font-size: 60px;
+	}
+}
+body {
+	background: url(background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+details {
+	color: white;
+	border: white 1px;
+	padding-top: 20px;
+}
+#episodes {
+	border: 1px white;
+	margin-left: 200px;
+	background: rgba(127,30,32,0.82);
+	width: 500px;
+	position: absolute;
+}
+#episodes ol {
+	padding-top: 10px;
+	padding-left: 40px;
+}
+
+.menuContainer {
+	display: flex;
+}
+
+.menu {
+	flex: 2;
+	font-family: 'MrRobot';
+	font-size: 30px;
+}
+
+.menu a:link {
+	color: red;
+	text-decoration: wavy underline;
+}
+
+.menu a:visited{
+	color: #7F1E20;
+}
+.container {
+	display: flex;
+}
+
+.summary {
+	flex: 2;
+	justify-content: center;
+	background-color: rgba(127,30,32,0.82);
+	font-family: 'Vollkorn SC';
+	font-size: 20px;
+	color: white;
+}
+
+.pad {
+	flex-basis: 33%;
+}
+.table td,th {
+	border: 1px dashed red;
+	text-align: center;
+	color: white;
+}
+.table {
+	margin: 0 auto;
+	background-color: rgba(47,47,47,0.71);
+}
+.title {
+	flex:2;
+}

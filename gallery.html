@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mr. Robot - Gallery</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<header>
+	<div class="menuContainer">
+		<div class="pad"></div>
+		<div class="menu">
+		<a href="index.html">Home</a>
+		<a href="cast.html">Cast</a>
+		<a href="episodes.html">Episodes</a>
+		<a href="gallery.html">Gallery</a>
+		<div class="pad"></div>
+	</div>
+</header>
+<body>
+	<button><a class="back-button" onclick="plusDivs(-1)">&#10094</a></button>
+	<button><a class="forward" onclick="plusDivs(+1)">&#10095</a></button>
+	<img class="gallery" src="gallery/1.jpg" width="75%">
+	<img class="gallery" src="gallery/2.jpg" width="75%">
+	<img class="gallery" src="gallery/3.jpg" width="75%">
+	<img class="gallery" src="gallery/4.jpg" width="75%">
+	<img class="gallery" src="gallery/5.jpg" width="75%">
+<script type="text/javascript">
+		var imageIndex = 1;
+	showDivs(imageIndex);
+
+	function plusDivs(n) {
+		showDivs(imageIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("gallery");
+		if (n > x.length) {
+			imageIndex = x.length
+		}
+		i = 0;
+		while (i < x.length) {
+			x[i].style.display = "none";
+			i++;
+		}
+		x[imageIndex - 1].style.display = "block";
+	}
+</script>
+</body>
+</html>
